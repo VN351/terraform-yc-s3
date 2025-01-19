@@ -1,3 +1,4 @@
+
 resource "random_string" "unique_id" {
   length  = 8
   upper   = false
@@ -618,7 +619,7 @@ variable "max_size" {
     It will try to create bucket using IAM-token in provider block, not using access_key.
   EOF
   type        = number
-  default     = null
+  #default     = null
 }
 
 variable "default_storage_class" {
